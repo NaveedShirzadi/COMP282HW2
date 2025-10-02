@@ -4,7 +4,12 @@ public class Point {
 
     // Default Constructor (Exercise 3 modification needed here)
     public Point() {
+        this(0);
         // Automatically provided if none defined
+    }
+    public Point(int size) {
+        this.x = size;
+        this.y = size;
     }
 
     // Two-argument constructor
@@ -20,6 +25,7 @@ public class Point {
     }
 
     public void printState() {
+
         System.out.println("Point coordinates: (" + x + ", " + y + ")");
     }
 
